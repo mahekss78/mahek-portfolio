@@ -1,0 +1,71 @@
+.certificates {
+  padding: 50px 20px;
+  background-color: #172026; /* Dark background for contrast */
+}
+
+.certificates h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #e2f1e7; /* Lightest color for heading */
+  margin-bottom: 30px;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Space between items */
+}
+
+.certificate-item {
+  background-color: #5FCDD9; /* Light turquoise for certificate items */
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.certificate-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-item h4 {
+  font-size: 1.5rem;
+  color: #172026; /* Darkest color for headings */
+}
+
+.certificate-item p {
+  font-size: 1rem;
+  color: #e2f1e7; /* Lightest color for paragraph text */
+  margin: 5px 0;
+}
+
+.pdf-link {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #04BFAD; /* Ensure visibility with the fourth color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.pdf-link:hover {
+  text-decoration: underline;
+  color: #e2f1e7; /* Lightest color on hover */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

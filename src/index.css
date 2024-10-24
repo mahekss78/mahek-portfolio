@@ -1,0 +1,76 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e2f1e7; /* Lightest Color */
+  color: #172026; /* Darkest Color */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3, h4, h5, h6 {
+  color: #04BF9D; /* Fifth Color */
+}
+
+p {
+  color: #5FCDD9; /* Second Color */
+}
+
+a {
+  color: #04BF9D; /* Fifth Color */
+}
+
+a:hover {
+  color: #5FCDD9; /* Second Color */
+}
+
+button {
+  background-color: #04BF9D; /* Fifth Color */
+  color: #e2f1e7; /* Lightest Color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5FCDD9; /* Second Color */
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .flex-column {
+    flex-direction: column;
+  }
+}

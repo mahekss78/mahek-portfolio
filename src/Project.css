@@ -1,0 +1,67 @@
+/* Project Section */
+.project {
+    padding: 4rem 0;
+    background-color: #5FCDD9; /* green color */
+    
+  }
+  
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color:white!important; /* Darkest color */
+    
+  }
+  
+  .project-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-item {
+    background-color:#172026 ; /* second color */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white; /* Fifth color */
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #5FCDD9; /* Second color */
+   
+  }
+  
+  .tech-stack h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #027373; /* Third color */
+  }
+  
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tech-item {
+    background-color: white; /* Fourth color */
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    color: #172026; /* Darkest color */
+    font-size: 0.9rem;
+  }
+  

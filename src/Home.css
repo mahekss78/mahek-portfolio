@@ -1,0 +1,89 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #172026; /* Darkest color */
+}
+
+
+.profile-image-wrapper {
+  position: relative;
+  width: 180px;  /* Outer container width */
+  height: 180px; /* Outer container height */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Glowing ring effect using box-shadow */
+  box-shadow: 0 0 15px 5px rgba(95, 205, 217, 0.8); /* Blue glow */
+}
+
+.profile-image {
+  width: 100%;  /* Image will fill the wrapper */
+  height: 100%; /* Image will fill the wrapper */
+  border-radius: 50%; /* Ensures the image is circular */
+  object-fit: cover; /* Keeps the aspect ratio of the image */
+}
+
+
+
+
+.text-section {
+  text-align: center;
+  margin: 20px 0;
+  color: #5FCDD9; /* Second color instead of green */
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 12px 24px;
+  color:#e2f1e7; /* Third color for button background */
+  background-color: #5FCDD9;
+  border-radius: 5px;
+  margin: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #04BFAD; /* Fourth Color */
+  color: #172026; /* Second color for hover effect */
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #e2f1e7; /* Lightest color */
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #5FCDD9; /* Second color */
+}
+
+.contact-info {
+  text-align: center;
+  color: #e2f1e7; /* Lightest color */
+}
+
+/* Animation for text or image sliding in */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-section, .profile-image-wrapper {
+  animation: slide-in 0.5s forwards;
+}

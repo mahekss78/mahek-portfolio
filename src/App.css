@@ -1,0 +1,54 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #172026; /* Dark background for better contrast */
+  color: #e2f1e7; /* Lightest color for text */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #5FCDD9; /* Lighter turquoise for links */
+}
+
+a:hover {
+  color: #04BFAD; /* Brighter teal on hover for visibility */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #387478; /* Second darkest color for header */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+main {
+  overflow: hidden;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #04BF9D; /* Call-to-action color */
+  color: #ffffff; /* White text for buttons */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #03BF8C; /* Darker teal on hover for buttons */
+}
+
+.hidden {
+  display: none;
+}
